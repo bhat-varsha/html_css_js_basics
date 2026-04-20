@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>question5</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <P>create a provision for a list to take input from the users and craete a list.</P>
+        <input type="text" id="myInput" class="border border-gray-300 rounded px-2 py-1">
+        <button onclick="addItem()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 mt-4 rounded border">Add Item</button>
+        <ul id="myList" class="list-disc mt-4"></ul>
+        <script>
+            function addItem() {
+                var input_value = document.getElementById("myInput").value;
+                if (input_value) {
+                    var li = document.createElement("li");
+                    li.textContent = input_value;
+                    document.getElementById("myList").appendChild(li);
+                    document.getElementById("myInput").value = ""; //after adding one point, to clrear the input field
+                }
+            }
+        </script>
+    </body>
+</html>

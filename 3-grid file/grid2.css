@@ -1,0 +1,31 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+.one {
+    grid-column: 1 / 5;   /* full width */
+}
+.two {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.three {
+    grid-column: 2 / 3;
+}
+.four {
+    grid-column: 3 / 4;
+}
+.five {
+    grid-column: 4 / 5;
+}
+.six {
+    grid-column: 1 / 2;
+}
+.seven {
+    grid-column: 2 / 3;
+}
+.eight {
+    grid-column: 3 / 5;   /* spans 2 columns */
+}

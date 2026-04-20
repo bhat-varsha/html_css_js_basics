@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>question3</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-purple-500 text-orange-300 font-bold">
+        <p>Utilize h2 tag with the text gene search , 
+            craete button n whn clicked change the text to updated tool and chnage the color</p>
+            <br></br>
+            <h2 id="gene">GENE SEARCH</h2>
+            <button type="button" onclick="change()" class="bg-black text-white">click here</button> 
+            <script>
+                function change(){
+                    document.getElementById('gene').innerText="UPDATED TOOL";
+                    document.getElementById('gene').style.color="red";
+                }
+            </script>   
+        </body>
+</html>

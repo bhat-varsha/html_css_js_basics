@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>question7</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body bg-green-500 text-black>
+        <p>create a new button which when clicked removes the first items from the list.</p>
+        <ul id="list">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <button onclick="removeFirst()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">click</button>
+        <script>
+            function removeFirst(){
+                const list=document.getElementById('list');
+
+                if (list.firstElementChild) {
+                    list.removeChild(list.firstElementChild);
+                }
+            }
+        </script>
+    </body>
+</html>

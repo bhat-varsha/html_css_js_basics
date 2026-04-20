@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-purple-900 text-white p-6">
+<input id="gene" type="text" placeholder="enter gene name"></input>
+<button onclick="addGene()">add gene</button>
+<div id="list" class="mt-4"></div>
+<script>
+    function addGene(){
+        let value = document.getElementById('gene').value;
+        if (value==""){
+            alert("add a gene");
+            return;
+        }
+        let p = document.createElement('p');
+        p.innerText = value;
+        document.getElementById('list').appendChild(p);
+
+    }
+</script>
+<ul id="genelist"></ul>
+<script>
+    function addGene(){
+        let value = document.getElementById('gene').value;
+        if (value==""){
+            alert("error");
+            return;
+        }
+        let li = document.createElement('li');
+        li.innerText = value;
+        document.getElementById('genelist').appendChild(li);
+        li.style.color = "cyan";
+
+    }
+</script>
+<ol id="genelist2"> </ol>
+<script>
+    function addGene(){
+        let value=document.getElementById('gene').value;
+        if (value==""){
+            alert("error");
+            return;
+        }
+        let li = document.createElement('li');
+        li.innerText = value;
+        document.getElementById('genelist2').appendChild(li);
+        li.style.color = "cyan";
+    }
+</script>
+
+<button onclick="Removelast()">remove last</button>
+<script>
+    function Removelast(){
+        let list = document.getElementById('genelist');
+        if (list.lastChild){ <!-- check if there is a last child to remove -->
+            list.removeChild(list.lastChild);
+        }
+    }
+</script>

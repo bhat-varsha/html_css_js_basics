@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>question7</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body bg-green-500 text-black>
+        <p>create a button which when clicked remove the item that matches the input text.</p>
+        <input type="text" id="inputBox" placeholder="Enter item">
+        <button onclick="removeItem()">Remove Item</button>
+        <ul id="myList">
+            <li>apple</li>
+            <li>banana</li>
+            <li>mango</li>
+        </ul>
+        <script>
+        function removeItem(){
+            let value = document.getElementById("inputBox").value;
+            let list = document.getElementById("myList");
+
+            let items = list.getElementsByTagName("li"); //Get all list items
+            for(let i = 0; i < items.length; i++){
+                //the above is for loop , works exactly like python as u know,
+                // i=0 staring index
+                // i<items.lenght , is upto last index, upo the lenght,
+                // i++, means iteration to add ,increase i by 1 each time
+                if(items[i].innerText === value){
+                    list.removeChild(items[i]);
+                    break; // stop the loop after removing 
+                }
+            }
+        }
+        </script>
+    </body>
+</html>

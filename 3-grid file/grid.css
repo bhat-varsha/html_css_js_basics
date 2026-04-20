@@ -1,0 +1,35 @@
+body{
+    font-size: large;
+}
+.layout{
+    display: grid;
+    grid-template-columns:200px 1fr 150px;
+    grid-template-areas:
+    "header header header"
+    "nav main aside" 
+    "footer footer footer";
+    gap: 10px;
+}
+.layout > * {
+    padding: 20px;
+}
+header{
+    grid-area: header;
+    background-color: brown;
+}
+nav{
+    grid-area: nav;
+    background-color: blue;
+}
+main{
+    grid-area: main;
+    background-color: beige;
+}
+aside{
+    grid-area: aside;
+    background-color: pink;
+}
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}

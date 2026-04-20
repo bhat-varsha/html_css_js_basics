@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid form</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-pink-900 text-white p-6">
+        <! usng alert --,
+         we can use alert to show a message when the button is clicked --
+         no need of using id , docment.getElementById() or any function for this --
+         we can directly write the code in onclick attribute of button -->
+    <button onclick="alert('Hello World!')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Click Me!
+    </button>
+    <!in this above , it is shwoing  popup and not tounching html element -->
+    <!that's why no need of id, document.getElementById() or function -->
+    
+
+    <!__________________________________________________________________-->
+    <!inbuilt event=onclick -->
+    <! --using documnet.getElementById() -->
+    <! for this we have to give id to the element  whenever we use to change the text or anything -->
+
+    <! this is inline event handling -->
+    <!in this h1 is saying hello , but after button clciked it will change to button clicked -->
+    <!tha;s where we use document.getElementById() to get the element and then change the text of that element -->
+    <h1 id="title">hello</h1>
+    <button onclick = "document.getElementById('title').innerText = 'button clicked'" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+        Click me!
+    </button>
+
+    <!using function -->
+    <! in this we create a fucntion called changeText and then we call that function in onclick attribute of button -->
+    <h1 id="title2">hi</h1>
+    <button onclick="changeText()">click me</button>
+        <script>
+        function changeText() {
+            document.getElementById('title2').innerText = 'button clicked';
+            }
+        </script>
+
+<! using addEventListener which also include document.getElementById -->
+    <button id="btn">Click me</button>
+    <script>
+        let btn_element=document.getElementById("btn");
+        btn_element.addEventListener('click',function(){
+            alert('button was clicked');
+        });
+
+    </script>
+    <!__________________________________________________________________-->
+
+        <!now using the innerhtml>
+    <p id="demo">text</p>
+    <script>
+        document.getElementById('demo').innerHTML="creating list";
+    </script>
+
+    <p id="new"><b>creating list</b></p>
+    <script>
+        document.getElementById('new').innerHTML=`
+        <b>creating list</b>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+        </ul>
+        `
+    </script>
+
+
+
+    <p id="name4">original</p>
+    <button type onclick="changeText()">change text</button>
+    <script>
+        function changeText(){
+        document.getElementById('name4').innerHTML= "<i>italic</i>" ;
+        }
+    </script>
+    </body>
+</html>

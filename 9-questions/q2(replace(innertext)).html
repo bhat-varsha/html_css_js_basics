@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>question2</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-black text-white">
+        <p>Use h1 tag n print the text welcome, 
+            add a button to it and when the button is clicked it shud print out msg n text is changed</p>
+            <br></br>
+        <h1 id="welcome">WELCOME to html class</h1>
+        <button type="button" onclick="changeText()" class="bg-red-500 text-yellow mt-4">click me</button>
+        <script>
+            function changeText(){
+                document.getElementById('welcome').innerText="welcome to js class";
+            }
+        </script>
+    </body>
+</html>

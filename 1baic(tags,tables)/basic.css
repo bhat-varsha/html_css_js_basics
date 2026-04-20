@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background-color: white;
+    background-image: -moz-linear-gradient();
+    margin: auto;
+}
+h1{
+    font: size 40px;
+    color: blue;
+    padding-bottom: 0%;
+}
+h2{
+    font-size: 40px;
+    color:pink;
+    padding-bottom: 0%;
+}
+h3{
+    font-size:40px;
+    color: violet;
+    padding-bottom: 0%;
+}
+p{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 0%;
+}
+ul,ol{
+    text-align: center;
+    list-style-position: inside;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+table, th, td {
+    border: 1px dashed black;
+    padding: 8px;
+}

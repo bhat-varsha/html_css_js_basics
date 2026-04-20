@@ -1,0 +1,28 @@
+<script>
+    let a = ["A","B","C"];
+    console.log(a);
+</script>
+<input id ="gene" type="text"></input>
+<button onclick="AddGene()">ADD</button>
+
+<div id="list" ></div>
+<button onclick="addlist()">list added</button>
+<script>
+    let gene=[];
+    function AddGene(){
+        let value=document.getElementById('gene').value;
+        if(value=="")
+        return;
+        gene.push(value);  // Add value to the END of the array
+        console.log(gene);  // print the array to the console
+        document.getElementById('gene').value = ""; // clear input
+    }
+    function addlist(){
+        let value=document.getElementById('list').innerHTML=`
+        <ul>
+            <li>brca1</li>
+            <li>tp53</li>
+        </ul>
+    `}
+    
+</script>
