@@ -70,3 +70,48 @@ in the above bg=background color
 text color
 p=padding
 _________________________________________________________________
+| Category          | Tailwind Class        | CSS Equivalent                             |
+| ----------------- | --------------------- | ------------------------------------------ |
+| **Background**    | `bg-purple-900`       | `background-color: #581c87;`               |
+|                   | `bg-gray-100`         | `background-color: #f3f4f6;`               |
+|                   | `bg-blue-500`         | `background-color: #3b82f6;`               |
+| **Text Color**    | `text-white`          | `color: white;`                            |
+|                   | `text-black`          | `color: black;`                            |
+|                   | `text-red-500`        | `color: #ef4444;`                          |
+| **Font Size**     | `text-sm`             | `font-size: 14px;`                         |
+|                   | `text-lg`             | `font-size: 18px;`                         |
+|                   | `text-xl`             | `font-size: 20px;`                         |
+| **Font Weight**   | `font-bold`           | `font-weight: bold;`                       |
+|                   | `font-light`          | `font-weight: 300;`                        |
+| **Text Align**    | `text-center`         | `text-align: center;`                      |
+|                   | `text-left`           | `text-align: left;`                        |
+| **Padding**       | `p-4`                 | `padding: 16px;`                           |
+|                   | `p-6`                 | `padding: 24px;`                           |
+|                   | `pt-4`                | `padding-top: 16px;`                       |
+|                   | `px-4`                | `padding-left: 16px; padding-right: 16px;` |
+| **Margin**        | `m-4`                 | `margin: 16px;`                            |
+|                   | `mt-2`                | `margin-top: 8px;`                         |
+|                   | `mx-auto`             | `margin-left: auto; margin-right: auto;`   |
+| **Width**         | `w-full`              | `width: 100%;`                             |
+|                   | `w-1/2`               | `width: 50%;`                              |
+|                   | `w-64`                | `width: 256px;`                            |
+| **Height**        | `h-10`                | `height: 40px;`                            |
+|                   | `h-screen`            | `height: 100vh;`                           |
+| **Border**        | `border`              | `border: 1px solid;`                       |
+|                   | `border-2`            | `border-width: 2px;`                       |
+|                   | `border-red-500`      | `border-color: red;`                       |
+| **Border Radius** | `rounded`             | `border-radius: 4px;`                      |
+|                   | `rounded-lg`          | `border-radius: 8px;`                      |
+|                   | `rounded-full`        | `border-radius: 9999px;`                   |
+| **Flexbox**       | `flex`                | `display: flex;`                           |
+|                   | `flex-col`            | `flex-direction: column;`                  |
+|                   | `justify-center`      | `justify-content: center;`                 |
+|                   | `items-center`        | `align-items: center;`                     |
+|                   | `gap-4`               | `gap: 16px;`                               |
+| **Display**       | `hidden`              | `display: none;`                           |
+|                   | `block`               | `display: block;`                          |
+|                   | `inline`              | `display: inline;`                         |
+| **Hover Effects** | `hover:bg-yellow-700` | `:hover { background-color: #a16207; }`    |
+|                   | `hover:text-white`    | `:hover { color: white; }`                 |
+| **Shadow**        | `shadow`              | `box-shadow: ...;`                         |
+|                   | `shadow-lg`           | `box-shadow: larger shadow;`               |
