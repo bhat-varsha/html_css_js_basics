@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q6</title>
+</head>
+<body>
+<p>CREATE A ANOTHER BUTTON , WHICH WHNE CLICKED , REPLACE THE PREVIOUS LIS T(USINF INNER HTML )</p>
+<button onclick="changeList()">Change List</button>
+    <ul id="listArea">
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+<script>
+function changeList() {
+    document.getElementById("listArea").innerHTML = `
+        <ul>
+            <li>Car</li>
+            <li>Bike</li>
+            <li>Bus</li>
+        </ul>
+    `;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q5</title>
+</head>
+<body>
+<p>.CREATE AN INPUT BOX AND A BUTTON WHEN THE BUTOON IS CLICKED IT SHLD TAKE A INPUT AND DISPLAY AS IT IS</p>
+<input type="text" id="inputBox" placeholder="Enter text">
+<button onclick="displayText()">Add</button>
+
+<p id="output"></p>
+
+<script>
+function displayText() {
+    let value = document.getElementById("inputBox").value;
+    document.getElementById("output").innerText = value;
+}
+</script>
+
+</body>
+</html>
