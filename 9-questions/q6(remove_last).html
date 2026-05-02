@@ -6,14 +6,14 @@
     </head>
     <body>
         <p>create a button which when clicked remove the last item from list.</p>
+        <button onclick="removeLastItem()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Remove Last Item
+        </button>
         <ul id="myList">
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
-        <button onclick="removeLastItem()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Remove Last Item
-        </button>
         <script>
             function removeLastItem() {
                 const list = document.getElementById('myList');
