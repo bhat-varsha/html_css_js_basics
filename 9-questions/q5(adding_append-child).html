@@ -11,9 +11,9 @@
         <ul id="myList" class="list-disc mt-4"></ul>
         <script>
             function addItem() {
-                var input_value = document.getElementById("myInput").value;
+                let input_value = document.getElementById("myInput").value;
                 if (input_value) {
-                    var li = document.createElement("li");
+                    let li = document.createElement("li");
                     li.textContent = input_value;
                     document.getElementById("myList").appendChild(li);
                     document.getElementById("myInput").value = ""; //after adding one point, to clrear the input field

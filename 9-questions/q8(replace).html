@@ -17,13 +17,8 @@
         function removeItem(){
             let value = document.getElementById("inputBox").value;
             let list = document.getElementById("myList");
-
             let list_items = list.getElementsByTagName("li"); //Get all list items
             for(let i = 0; i < list_items.length; i++){
-                //the above is for loop , works exactly like python as u know,
-                // i=0 staring index
-                // i<items.lenght , is upto last index, upo the lenght,
-                // i++, means iteration to add ,increase i by 1 each time
                 if(list_items[i].innerText === value){
                     list.removeChild(list_items[i]);
                     break; // stop the loop after removing 

@@ -44,6 +44,11 @@ Condition	decision making
 _____________________________________________________________________________________
 An array in JavaScript is just a container that stores multiple values in one variable.
 
+<script>
+    let a = ["A","B","C"];
+    console.log(a);
+</script>
+
 Example:
 let a = ["A", "B", "C"];
 
