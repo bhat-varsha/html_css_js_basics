@@ -1,3 +1,5 @@
+#               READ FROM 45 TH LINE FOR ARRAYS
+
 1. Arrays : An array is used to store multiple values in one variable []
 🔸 Syntax
 let fruits = ["apple", "banana", "mango"];
@@ -20,16 +22,6 @@ console.log(person["age"]);
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
-🔸 (for arrays)
-let fruits = ["apple", "banana"];
-for (let fruit of fruits) {
-    console.log(fruit);
-}
-🔸 (for objects)
-let person = {name: "Varsha", age: 21};
-for (let key in person) {
-    console.log(key, person[key]);
-}
 
 🔹 4. Conditions : Conditions are used to make decisions in code
 🔸 if statement
@@ -49,3 +41,52 @@ Array	store multiple values
 Object	store structured data
 Loop	repeat code
 Condition	decision making
+_____________________________________________________________________________________
+An array in JavaScript is just a container that stores multiple values in one variable.
+
+Example:
+let a = ["A", "B", "C"];
+
+Arrays are ordered
+Index starts from 0
+You can store strings, numbers, objects, etc.
+
+Common operations:
+a.push("D");   // add at end
+a.pop();       // remove last
+a[0];          // access first element
+a.length;      // total elements
+
+undertsand the code first ;
+Q2: Delete Last Element
+Add button to remove last element from array
+function removeLast(){
+    arr.pop();
+}
+
+✅ Q3: Search Element
+Search if a value exists in array
+
+function search(){
+    let val = document.getElementById("gene").value;
+
+    if(arr.includes(val)){
+        alert("Found");
+    } else {
+        alert("Not Found");
+    }
+}
+✅ Q4: Count Elements
+function count(){
+    alert("Total elements: " + arr.length);
+}
+✅ Q5: Display in Paragraph instead of List
+function show(){
+    let text = "";
+    for(let i=0;i<arr.length;i++){
+        text += arr[i] + " ";
+    }
+
+    document.getElementById("output").innerText = text;
+}
+_________________________________________________________________

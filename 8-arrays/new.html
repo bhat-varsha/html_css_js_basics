@@ -18,11 +18,14 @@
         document.getElementById('gene').value = ""; // clear input
     }
     function addlist(){
-        let value=document.getElementById('list').innerHTML=`
-        <ul>
-            <li>brca1</li>
-            <li>tp53</li>
-        </ul>
-    `}
+        let value = "<ul>";
+        for(let i=0;i<gene.length;i++){
+            value += "<li>" + gene[i] + "</li>";
+        }
+        value += "</ul>";
+        document.getElementById('list').innerHTML = value;
+}
+
     
 </script>
+
