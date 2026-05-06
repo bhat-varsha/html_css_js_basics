@@ -1,0 +1,44 @@
+<input id="searchName" type="text" placeholder="Enter name to search">
+<button onclick="searchUserUI()">Search</button>
+
+<div id="output"></div>
+
+<script>
+    let users = [
+        {id: 1, name: "Agnik"},
+        {id: 2, name: "Varsha"},
+        {id: 3, name: "Riya"},
+        {id: 4, name: "Varun"}
+    ];
+
+    // Search function
+    function searchUserUI() {
+        let name = document.getElementById("searchName").value;
+        let result = [];
+
+        for (let i = 0; i < users.length; i++) {
+            if (users[i].name.toLowerCase().includes(name.toLowerCase())) {
+                result.push(users[i]);
+            }
+        }
+
+        display(result);
+    }
+
+    // Display function
+    function display(data) {
+        if (data.length === 0) {
+            document.getElementById("output").innerHTML = "No matching users found";
+            return;
+        }
+
+        let value = "<ul>";
+
+        for (let i = 0; i < data.length; i++) {
+            value += "<li>" + data[i].id + " - " + data[i].name + "</li>";
+        }
+
+        value += "</ul>";
+        document.getElementById("output").innerHTML = value;
+    }
+</script>

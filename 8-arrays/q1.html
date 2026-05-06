@@ -1,0 +1,67 @@
+<input id="name" type="text" placeholder="Enter name">
+<input id="userid" type="number" placeholder="Enter ID">
+
+<button onclick="addUserUI()">Add User</button>
+<button onclick="getAllUsersUI()">Get All Users</button>
+<button onclick="getUserByIdUI()">Get User By ID</button>
+<button onclick="deleteUserUI()">Delete User</button>
+
+<div id="output"></div>
+<script>
+    let users = [];
+    // Add user
+    function addUserUI() {
+        let name = document.getElementById("name").value;
+        if (name == "") return;
+        let id = users.length + 1;
+        users.push({id: id, name: name});
+        document.getElementById("name").value = "";
+        display(users);
+    }
+
+    // Get all users
+    function getAllUsersUI() {
+        display(users);
+    }
+
+    // Get user by ID
+    function getUserByIdUI() {
+        let id = Number(document.getElementById("userid").value);
+
+        for (let i = 0; i < users.length; i++) {
+            if (users[i].id === id) {
+                display([users[i]]);
+                return;
+            }
+        }
+
+        document.getElementById("output").innerHTML = "User not found";
+    }
+
+    // Delete user
+    function deleteUserUI() {
+        let id = Number(document.getElementById("userid").value);
+
+        for (let i = 0; i < users.length; i++) {
+            if (users[i].id === id) {
+                users.splice(i, 1);
+                display(users);
+                return;
+            }
+        }
+
+        document.getElementById("output").innerHTML = "User not found";
+    }
+
+    // Display function (common)
+    function display(data) {
+        let value = "<ul>";
+
+        for (let i = 0; i < data.length; i++) {
+            value += "<li>" + data[i].id + " - " + data[i].name + "</li>";
+        }
+
+        value += "</ul>";
+        document.getElementById("output").innerHTML = value;
+    }
+</script>
