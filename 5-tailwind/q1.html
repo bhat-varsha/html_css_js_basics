@@ -8,29 +8,20 @@
 <p>USINF TAILWIND CLASSES CREATE A LIST USING TEXTBOXES AND BUTTONS(USING DIV TAG)</p>
 <div class="bg-gray-100 p-5 rounded shadow">
 
-    <input id="itemInput" type="text" 
-        class="border p-2 rounded mb-3" 
-        placeholder="Enter item">
-
-    <button onclick="addItem()" 
-        class="bg-blue-500 text-white px-3 py-2 rounded">
+    <input id="itemInput" type="text" class="border p-2 rounded mb-3" placeholder="Enter item">
+    <button onclick="addItem()" class="bg-blue-500 text-white px-3 py-2 rounded">
         Add Item
     </button>
-
     <div id="listContainer" class="mt-4"></div>
-
-</div>
-
 <script>
 function addItem() {
     let value = document.getElementById("itemInput").value;
-
     if (value !== "") {
         let div = document.createElement("div");
         div.className = "bg-white p-2 mt-2 rounded shadow";
         div.innerText = value;
-
         document.getElementById("listContainer").appendChild(div);
+        document.getElementById("itemInput").value = ""; // Clear input after adding
     }
 }
 </script>

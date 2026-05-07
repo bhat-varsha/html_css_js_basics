@@ -12,7 +12,7 @@
         <script>
             function addItem() {
                 let input_value = document.getElementById("myInput").value;
-                if (input_value) {
+                if (input_value !== "") {
                     let li = document.createElement("li");
                     li.textContent = input_value;
                     document.getElementById("myList").appendChild(li);
