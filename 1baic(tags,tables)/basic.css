@@ -37,3 +37,21 @@ table, th, td {
     border: 1px dashed black;
     padding: 8px;
 }
+
+        body {
+            text-align: center; /* Center-aligns all content on the page */
+            font-family: Arial, sans-serif;/* Sets a clean, modern font for the page */
+            margin-top: 150px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            font-size: 40px;
+            color: darkblue;
+        }
+        h2 {
+            font-size: 25px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+        }
