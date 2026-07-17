@@ -1,17 +1,42 @@
+HTML5 is the latest version of HTML used to create the structure of web pages. 
 !DOCTYPE html -tells browser it is html5
-html -root of webpage
-head-contain metadata,like link image all those things
+html -root of webpage 
+head-contain metadata,like link image and css 
 body - visible content
 
 the font size of h1 h2 h3 p all are inbuilt different 
 _____________________________________________________
-HTML Tags : Tags define elements in a webpage.
+HTML Tags : Tags define elements in a webpage.common html tags
 Tag	    Purpose
 <h1>	Heading
 <p>	    Paragraph
-<a>	    Link
-<img>	Image
+<a>	    hyperLink    <a href="url"></a>
+<img>	Image   <img src="path/file" alt="name" width="300" height="20">
 <table>	Table
+<form>  to collect user input <form action="/search" method="POST">
+<input>
+<button>
+<dropdown> give the option      <option >a</option>
+<textarea>
+<list>  <ol><ul><li>
+<br>    break 
+<hr>    horizontal line 
+<b>     bold
+<li>    ITALINC
+<u>     underline
+
+
+semantic/meanig full tags
+| Tag         | Purpose             | Used For                |
+| ----------- | ------------------- | ----------------------- |
+| `<header>`  | Top section         | Logo, title             |
+| `<nav>`     | Navigation          | Menus                   |
+| `<section>` | Separate topic      | Different page sections |
+| `<article>` | Independent content | Blog, news              |
+| `<aside>`   | Sidebar             | Ads, related links      |
+| `<footer>`  | Bottom section      | Contact, copyright      |
+| `<main>`    | Main content        | Main page area          |
+
 ______________________________________
 <!--to do comment in html -->  ,to comment
 to change the font format like bold italic underline we can do,
