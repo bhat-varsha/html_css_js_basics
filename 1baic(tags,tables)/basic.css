@@ -1,82 +1,119 @@
-body {
-    text-align: center;
-    font-family: Arial;
-    background-color: white;
-    background-image: -moz-linear-gradient();
-    margin: auto;
-}
-h1{
-    font-size: 40px;
-    color: blue;
-    padding-bottom: 0%;
-}
-h2{
-    font-size: 40px;
-    color:pink;
-    padding-bottom: 0%;
-}
-h3{
-    font-size:40px;
-    color: violet;
-    padding-bottom: 0%;
-}
-p{
-    font-size: 20px;
-    color: black;
-    padding-bottom: 0%;
-}
-ul,ol{
-    text-align: center;
-    list-style-position: inside;
-}
-table {
-    border-collapse: collapse;
-    margin: auto;
-}
-table, th, td {
-    border: 1px dashed black;
-    padding: 8px;
+/*================ BODY ================*/
+body{
+font-family:Arial, sans-serif;                     /* Arial | Verdana | Times New Roman */
+font-size:16px;                                   /* px | em | rem | % */
+font-style:normal;                                /* normal | italic | oblique */
+font-weight:normal;                               /* normal | bold | bolder | lighter | 100-900 */
+color:black;                                      /* red | blue | rgb() | #000 */
+background:white;                                 /* color | url(img.jpg) */
+background-repeat:no-repeat;                      /* repeat | repeat-x | repeat-y */
+background-size:cover;                            /* cover | contain | auto */
+text-align:center;                                /* left | center | right | justify */
+margin:20px;                                      /* auto | top right bottom left */
+padding:20px;                                     /* top right bottom left */
+width:100%;                                       /* px | % */
+height:auto;                                      /* px | auto */
+overflow:auto;                                    /* visible | hidden | scroll | auto */
 }
 
-        body {
-            text-align: center; /* Center-aligns all content on the page */
-            font-family: Arial, sans-serif;/* Sets a clean, modern font for the page */
-            margin-top: 150px;
-            background-color: #f2f2f2;
-        }
-        h1 {
-            font-size: 40px;
-            color: darkblue;
-        }
-        h2 {
-            font-size: 25px;
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-        }
-body{
-    text-align: center;
-    font-family: Arial;
-    background-color: white;
-    background-image: -moz-linear-gradient();
-    margin: auto;
+/*================ HEADINGS & PARAGRAPH ================*/
+h1,h2,h3,h4,h5,h6,p{
+text-align:center;
+text-decoration:none;                             /* underline | overline | line-through */
+text-transform:none;                              /* uppercase | lowercase | capitalize */
+letter-spacing:2px;
+word-spacing:5px;
+line-height:1.5;
+margin:10px;
+padding:10px;
 }
-h1{
-    font-size: large;
-    color: red;
+
+/*================ LINKS ================*/
+a{
+color:blue;
+text-decoration:none;
 }
-ul,ol{
-    text-align: center;
-    list-style-position: inside;
-    color: blue;
+a:hover{
+color:red;
+text-decoration:underline;
 }
-.sdde{
-    font-family: 'Times New Roman', Times, serif;
-    color: brown;
+
+/*================ LISTS ================*/
+ul{
+list-style-type:disc;                             /* disc | circle | square | none */
+list-style-position:inside;                       /* inside | outside */
 }
-#unique{
-    font-style: italic;
-    font-size: smaller;
-    color: yellowgreen;
+ol{
+list-style-type:decimal;                          /* decimal | upper-alpha | lower-alpha | upper-roman | lower-roman */
+list-style-position:inside;
 }
+
+/*================ IMAGE ================*/
+img{
+width:300px;
+height:auto;
+border:2px solid black;                           /* solid | dashed | dotted | double */
+border-radius:10px;                               /* 0 | 5px | 10px | 50% */
+opacity:1;                                        /* 0 - 1 */
+}
+
+/*================ TABLE ================*/
+table{
+width:70%;
+border-collapse:collapse;                         /* collapse | separate */
+border-spacing:5px;
+margin:auto;
+}
+table,th,td{
+border:2px solid black;                           /* solid | dashed | dotted | double */
+padding:10px;
+text-align:center;
+}
+th{
+background:lightgray;
+}
+
+/*================ FORM ================*/
+form{
+width:60%;
+margin:auto;
+}
+input,textarea,select,button{
+padding:8px;
+margin:5px;
+border:1px solid black;
+border-radius:5px;
+}
+button{
+background:blue;
+color:white;
+cursor:pointer;                                   /* pointer | default | wait | move */
+}
+
+/*================ DISPLAY ================*/
+/* display:block; */
+/* display:inline; */
+/* display:inline-block; */
+/* display:flex; */
+/* display:grid; */
+/* display:none; */
+
+/*================ POSITION ================*/
+/* position:static; */
+/* position:relative; */
+/* position:absolute; */
+/* position:fixed; */
+/* position:sticky; */
+
+/*================ OVERFLOW ================*/
+/* overflow:visible; */
+/* overflow:hidden; */
+/* overflow:scroll; */
+/* overflow:auto; */
+
+/*================ SHADOW ================*/
+/* box-shadow:5px 5px 10px gray; */
+
+/*================ SELECTORS ================*/
+.className{ }
+#idName{ }
