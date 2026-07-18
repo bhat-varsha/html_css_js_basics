@@ -16,3 +16,38 @@
 </div>
 </body>
 </html>
+
+
+
+_________________________________________---
+<form action="/blast" method="POST" enctype="multipart/form-data">
+<label>Gene Name</label>
+<input type="text"
+name="gene"
+placeholder="TP53"
+required>
+
+<br><br>
+
+<label>Upload FASTA</label>
+
+<input
+type="file"
+accept=".fasta"
+name="sequence">
+
+<br><br>
+
+<button type="submit">
+Run BLAST
+</button>
+
+<button type="reset">
+Clear
+</button>
+
+<button type="button" onclick="help()">
+Help
+</button>
+
+</form>

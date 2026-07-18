@@ -115,3 +115,12 @@ _________________________________________________________________
 |                   | `hover:text-white`    | `:hover { color: white; }`                 |
 | **Shadow**        | `shadow`              | `box-shadow: ...;`                         |
 |                   | `shadow-lg`           | `box-shadow: larger shadow;`               |
+
+
+| Bootstrap                                               | Tailwind CSS                                   |
+| ------------------------------------------------------- | ---------------------------------------------- |
+| Component-based framework                               | Utility-first framework                        |
+| Pre-designed components (Navbar, Cards, Buttons, Forms) | Build your own design using utility classes    |
+| Easier for beginners                                    | More flexible but has a steeper learning curve |
+| Uses classes like `col-md-6`                            | Uses classes like `md:w-1/2` or `grid-cols-3`  |
+| Faster for ready-made websites                          | Better for custom UI designs                   |
