@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>querySelector Example</title>
+</head>
+<body>
+    <h1 class="heading">HTML</h1>
+    <h1 class="heading">CSS</h1>
+    <h1 class="heading">JavaScript</h1>
+    <button onclick="changeHeading()">Click Me</button>
+    <script>
+        function changeHeading() {
+            // Selects ONLY the first element having class="heading"
+            let element = document.querySelector(".heading");
+            element.innerText = "Changed by querySelector()";
+        }
+    </script>
+</body>
+</html>

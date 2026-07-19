@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>this with onclick</title>
+</head>
+<body>
+
+<h2 onclick="changeColor(this)">Click Me</h2>
+<input type="text" placeholder="Type here" oninput="showValue(this)">
+<button onclick="showElement(this)">Show This</button>
+
+<script>
+function changeColor(element){
+    element.style.color = "red";
+    element.style.fontSize = "30px";
+}
+/* this for input and button */
+function showValue(element){
+    console.log(element.value);
+}
+function showElement(element){
+    console.log(element);
+}
+
+</script>
+
+</body>
+</html>

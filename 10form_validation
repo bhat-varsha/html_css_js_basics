@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Student Registration Form</h2>
+    <form id="myForm">
+        Name :<input type="text" id="name">
+        Email :<input type="text" id="email">
+        Password :<input type="password" id="password">
+        age :<input type="number" id="age">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        let form = document.getElementById("myForm");
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let age = document.getElementById("age").value;
+            // Name Validation
+            if(name==""){
+                alert("Name cannot be empty");
+                return;
+            }
+            // Email Validation
+            if(!email.includes("@")){
+                alert("Enter a valid Email");
+                return;
+
+            }
+            // Password Validation
+            if(password.length < 8){
+                alert("Password must be at least 8 characters");
+                return;
+
+            }
+            // Age Validation
+            if(age < 18){
+                alert("Age must be 18 or above");
+                return;
+
+            }
+            // Mobile Validation
+            if(mobile.length != 10){
+                alert("Mobile number must contain 10 digits");
+                return;
+
+            }
+            alert("Form Submitted Successfully");
+        });
+
+    </script>
+
+</body>
+
+</html>

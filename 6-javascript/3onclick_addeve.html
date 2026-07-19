@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2 id="title">Welcome</h2>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+        function changeText() {
+            document.getElementById("title").innerText = "Button Clicked";
+        }
+    </script>
+</body>
+</html>
+________________________--
+<!DOCTYPE html>
+<html>
+<body>
+    <h2 id="title">Welcome</h2>
+    <button id="btn">Click Me</button>
+    <script>
+        let button = document.getElementById("btn");
+        button.addEventListener("click", changeText);
+        function changeText() {
+            document.getElementById("title").innerText = "Button Clicked";
+        }
+    </script>
+</body>
+</html>

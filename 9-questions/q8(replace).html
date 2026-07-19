@@ -18,10 +18,15 @@
             let value = document.getElementById("inputBox").value;
             let list = document.getElementById("myList");
             let list_items = list.getElementsByTagName("li"); //Get all list items
-            for(let i = 0; i < list_items.length; i++){
-                if(list_items[i].innerText === value){
+
+            for(let i = 0; i < list_items.length; i++)
+            {
+                if(list_items[i].innerText === value)
+                {
                     list.removeChild(list_items[i]);
-                    break; // stop the loop after removing 
+                    
+                    break; 
+                    // stop the loop after removing 
                 }
             }
         }

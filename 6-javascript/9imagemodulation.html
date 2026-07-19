@@ -1,0 +1,65 @@
+        <p id="link">link</p>
+    <button type="button" onclick="getlink()" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+        link availbale
+    </button>
+    <script>
+        function getlink(){
+        document.getElementById('link').innerHTML=`
+        <a href="https://www.google.com" target="_blank" class="text-blue-300 underline">
+        Visit Google
+        </a>
+        <img src="https://via.placeholder.com/150" 
+             alt="sample image" 
+             class="mt-4 rounded">
+        `
+        }
+    </script>
+    
+        <p id="image">images</p>
+    <button type onclick="getimage()" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+        photos
+    </button>
+    <script>
+        function getimage(){
+        document.getElementById('image').innerHTML=`
+        <img src="download.jpg">
+        `
+        }
+    </script>
+
+______________--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load Image</title>
+</head>
+<body>
+    <button onclick="showImage()">Get Image</button>
+    <img id="image">
+    <script>
+        function showImage(){
+            let image=document.getElementById("image");
+            image.setAttribute("src","https://picsum.photos/250");
+        }
+    </script>
+</body>
+</html>   
+________________________--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Image</title>
+</head>
+<body>
+    <button onclick="showImage()">Show Image</button>
+    <img id="image"
+         src="https://picsum.photos/250"
+         style="display:none;">
+    <script>
+        function showImage(){
+            let image=document.getElementById("image");
+            image.style.display="block";
+        }
+    </script>
+</body>
+</html> 

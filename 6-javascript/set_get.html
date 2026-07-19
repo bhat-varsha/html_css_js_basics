@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attributes</title>
+</head>
+<body>
+<img id="img" src="cat.jpg" width="200">
+<button onclick="changeImage()">Set Attribute</button>
+<button onclick="showImage()">Get Attribute</button>
+
+<script>
+function changeImage(){
+    document.getElementById("img").setAttribute("width","400");
+}
+function showImage(){
+    let image = document.getElementById("img").getAttribute("src");
+    alert(image);
+}
+</script>
+</body>
+</html>

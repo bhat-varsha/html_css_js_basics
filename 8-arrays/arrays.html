@@ -4,6 +4,13 @@
 
 <div id="list" ></div>
 <button onclick="addlist()">list added</button>
+
+<button onclick="searchItem()">Search</button>
+
+<button onclick="removeLast()">Remove Last</button>
+
+<button onclick="countItems()">Count</button>
+
 <script>
     let gene=[];
     function AddGene(){
@@ -11,8 +18,8 @@
         if(value=="")
         return;
         gene.push(value);  // Add value to the END of the array
-        console.log(gene);  // print the array to the console
         document.getElementById('gene').value = ""; // clear input
+        console.log(gene);  // print the array to the console
     }
     function addlist(){
         let value = "<ul>";
@@ -22,6 +29,22 @@
         value += "</ul>";
         document.getElementById('list').innerHTML = value;
 }
+    function searchItem(){
+        let value=document.getElementById('gene').value;
+        if(gene.includes(value)){
+            alert("Found");
+        } else {
+            alert("Not Found");
+        }
+    }
+    function removeLast(){
+        gene.pop();  // Remove the last element from the array
+        console.log(gene);  // print the array to the console
+    }
+
+    function countItems(){
+        alert("Total items in the array: " + gene.length);
+    }
 
     
 </script>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="btn">Click Me</button>
+    <script>
+        let btn = document.getElementById("btn");
+        function changeColor() {
+            document.body.style.backgroundColor = "lightblue";
+            btn.removeEventListener("click", changeColor);
+            alert("Event Removed");
+        }
+        btn.addEventListener("click", changeColor);
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Student Registration Form</h2>
+    <form onsubmit="return validateForm()">
+        Name :<input type="text" id="name">
+        Email :<input type="text" id="email">
+        Password :<input type="password" id="password">
+        Age :<input type="number" id="age">
+        Mobile :<input type="text" id="mobile">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validateForm(){
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let age = document.getElementById("age").value;
+            let mobile = document.getElementById("mobile").value;
+            // Name Validation
+            if(name == ""){
+                alert("Name cannot be empty");
+                return false;
+
+            }
+            // Email Validation
+            if(!email.includes("@")){
+                alert("Enter a valid Email");
+                return false;
+
+            }
+            // Password Validation
+            if(password.length < 8){
+                alert("Password must be at least 8 characters");
+                return false;
+
+            }
+            // Age Validation
+            if(age < 18){
+                alert("Age must be 18 or above");
+                return false;
+            }
+            // Mobile Validation
+            if(mobile.length != 10){
+                alert("Mobile number must contain 10 digits");
+                return false;
+            }
+            alert("Form Submitted Successfully");
+            return true;
+        }
+    </script>
+</body>
+</html>

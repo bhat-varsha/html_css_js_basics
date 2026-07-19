@@ -1,0 +1,8 @@
+import streamlit as st
+
+st.title("My Bioinformatics Tool")
+
+gene = st.text_input("Enter Gene Name")
+
+if st.button("Search"):
+    st.write("Searching for", gene)

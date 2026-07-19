@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Change an Image using JavaScript</title>
+</head>
+
 <body>
+    <img id="myImage" src="https://via.placeholder.com/250x150?text=Image+1" width="250" height="150">
+    <button onclick="changeImage()">Change Image </button>
+    <script>
+        function changeImage(){
+            let image = document.getElementById("myImage");
+            image.setAttribute("src","https://via.placeholder.com/250x150?text=Image+2");
+        }
+    </script>
+</body>
+</html>
 
-<img id="pic"
-src="https://via.placeholder.com/200"
-width="200">
+____________________________________
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resize an Image</title>
+</head>
 
-<br><br>
-
-<button onclick="changeImage()">
-Change Image
-</button>
-
-<script>
-
-function changeImage() {
-
-    document.getElementById("pic").src =
-    "https://via.placeholder.com/300";
-
-}
-
-</script>
-
+<body>
+    <img id="myImage" src="https://via.placeholder.com/200x120?text=Image">
+    <button onclick="resizeImage()">Increase Size</button>
+    <script>
+        function resizeImage(){
+            let image = document.getElementById("myImage");
+            image.style.width = "400px";
+            image.style.height = "250px";
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create a Bar Chart using Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+    <canvas id="myChart"></canvas>
+    <script>
+        let chart = document.getElementById("myChart");
+        let myChart = new Chart(chart, {
+            type: "bar",
+            data: {
+                labels: ["Gene A", "Gene B", "Gene C"],
+                datasets: [{
+                    label: "Expression Level",
+                    data: [25, 40, 15],
+                    backgroundColor: [
+                        "red",
+                        "blue",
+                        "green",
+                        "orange"
+                    ],
+                    borderColor: [
+                        "darkred",
+                        "darkblue",
+                        "darkgreen",
+                        "brown"
+                    ],
+                    borderWidth: 2
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>querySelectorAll Example</title>
+</head>
+<body>
+    <h1 class="heading">HTML</h1>
+    <h1 class="heading">CSS</h1>
+    <h1 class="heading">JavaScript</h1>
+    <button onclick="changeAll()">Click Me</button>
+    <script>
+        function changeAll() {
+            let elements = document.querySelectorAll(".heading");
+            elements.forEach(function(item) {
+                item.innerText = "Changed";
+            });
+        }
+    </script>
+</body>
+
+</html>
+let headings = document.querySelectorAll(".course");
+
+headings[0].style.color = "red";
+headings[1].style.color = "blue";
+headings[2].style.color = "green";
